@@ -1,4 +1,5 @@
-🔒 Repository Notice
+# 🔒 Repository Notice
+
 Privacy Notice: For privacy and security purposes, this public repository does not contain the full application source code. Instead, it hosts the preliminary, original base programs and scripts that served as the foundation for the platform.
 
 The complete, production-ready codebase for Panacor Web—including the React frontend, Express backend, and Python AI engines—is securely maintained in a separate, private repository.
