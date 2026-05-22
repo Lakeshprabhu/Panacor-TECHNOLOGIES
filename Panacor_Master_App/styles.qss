@@ -1,0 +1,246 @@
+/* Panacor Master App Global Stylesheet */
+
+/* Main Background */
+QMainWindow {
+    background-color: #F0F4F8;
+}
+
+QWidget#content_area {
+    background-color: #F0F4F8;
+}
+
+/* Sidebar Navigation */
+QWidget#sidebar {
+    background-color: #FFFFFF;
+    border-right: 1px solid #E2E8F0;
+}
+
+QPushButton.SidebarButton {
+    background-color: transparent;
+    color: #718096;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px 10px;
+}
+
+QPushButton.SidebarButton:hover {
+    background-color: #F7FAFC;
+    color: #28235D;
+}
+
+QPushButton.SidebarButton:checked {
+    background-color: #F0F4F8;
+    color: #28235D;
+    border-left: 4px solid #E84545;
+    border-radius: 4px;
+}
+
+/* Header */
+QWidget#header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+QLabel#brand_title {
+    color: #28235D;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+QLabel#brand_subtitle {
+    color: #718096;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 12px;
+}
+
+/* Cards (Hero Tiles & Config Sections) */
+QWidget.Card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+}
+
+/* Dashboard Hero Tiles */
+QPushButton.HeroTile {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+QPushButton.HeroTile:hover {
+    background-color: #FAFBFC;
+    border: 1px solid #C2CCDC;
+}
+
+/* Text styles */
+QLabel.CardTitle {
+    color: #28235D;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+QLabel.BodyText {
+    color: #2D3748;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+QLabel.MutedText {
+    color: #718096;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Inputs */
+QLineEdit, QComboBox, QTextEdit, QPlainTextEdit {
+    background-color: #F7FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    color: #2D3748;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 13px;
+    padding: 8px 12px;
+}
+
+QLineEdit:focus, QComboBox:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border: 1px solid #28235D;
+    background-color: #FFFFFF;
+}
+
+/* Standard Buttons (Browse, etc.) */
+QPushButton.SecondaryButton {
+    background-color: #F7FAFC;
+    color: #2D3748;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+QPushButton.SecondaryButton:hover {
+    background-color: #E2E8F0;
+    color: #28235D;
+}
+
+QPushButton.SecondaryButton:pressed {
+    background-color: #CBD5E0;
+}
+
+/* Primary Action Button (Process) */
+QPushButton.PrimaryButton {
+    background-color: #28235D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 30px;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+QPushButton.PrimaryButton:hover {
+    background-color: #3D3680;
+}
+
+QPushButton.PrimaryButton:pressed {
+    background-color: #1A1640;
+}
+
+QPushButton.PrimaryButton:disabled {
+    background-color: #CBD5E0;
+    color: #A0AEC0;
+}
+
+/* Danger / Remove Button */
+QPushButton.DangerButton {
+    background-color: #FFF5F5;
+    color: #E53E3E;
+    border: 1px solid #FEB2B2;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+QPushButton.DangerButton:hover {
+    background-color: #FED7D7;
+}
+
+/* ListBox / Table */
+QListWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 5px;
+    color: #2D3748;
+    font-size: 13px;
+}
+
+QListWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #F7FAFC;
+}
+
+QListWidget::item:selected {
+    background-color: #EBF4FF;
+    color: #2B6CB0;
+    border-radius: 4px;
+}
+
+/* Progress Bar */
+QProgressBar {
+    background-color: #E2E8F0;
+    border-radius: 4px;
+    text-align: center;
+    color: transparent;
+    height: 8px;
+}
+
+QProgressBar::chunk {
+    background-color: #38A169;
+    border-radius: 4px;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #F7FAFC;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #CBD5E0;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #A0AEC0;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Terminal Log Console */
+QTextEdit.TerminalConsole {
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 12px;
+    border: 1px solid #4A5568;
+    border-radius: 6px;
+}
